@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import { createStore } from "vuex";
+import store from './store/index';
 import App from "./App.vue";
 import "./index.css";
 import router from "./routes.js";
@@ -7,7 +8,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Create a new store instance.
-const store = createStore({
+const oldStore = createStore({
   state() {
     return {
       cart: {
@@ -33,11 +34,9 @@ const store = createStore({
   },
 });
 
-const VueMart = createApp({
-  router,
-  store,
-  render: (v) => v(App),
-}).mount("#app");
-
+const VueMart = createApp(App)
 // Install the store instance as a plugin
 VueMart.use(store);
+VueMart.use(router);
+VueMart.mount("#app");
+
