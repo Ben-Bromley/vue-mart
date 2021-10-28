@@ -1,0 +1,47 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ebf1ee;
+}
+html, body {
+  background: #252525 !important;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+.page {
+  min-height: 90vh;
+}
+
+
+
+.loading {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingAnimation {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #18a542;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
