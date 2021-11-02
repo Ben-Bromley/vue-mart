@@ -17,5 +17,5 @@
 </template>
 
 <script>
-import '@/scss/app.scss'
+
 </script>
