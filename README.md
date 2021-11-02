@@ -1,9 +1,24 @@
-# VueMart
+# vue-mart
 
-Just a basic vue app, adding vuex in the near future to flesh out the app.
+## Project setup
+```
+npm install
+```
 
-- Currently using vue router for navigation.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-- Using [keikaavousi/fake-store-api](https://github.com/keikaavousi/fake-store-api "Fake Store API GitHub Repo") for mock product catalogue.
+### Compiles and minifies for production
+```
+npm run build
+```
 
-(see other branch for an early vue 3 version of the project)
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
